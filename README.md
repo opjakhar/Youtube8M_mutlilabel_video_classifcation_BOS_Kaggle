@@ -1,4 +1,4 @@
-Here we have uploaded our youtube8M mutlilabel video classification challenge on Kaggle.we are using starter code provided by the team(kaggle or Google).
+youtube8M mutlilabel video classification challenge code.we are using starter code provided by the Organisor(kaggle or Google).
 We ran this code on google cloud plateform using 4Gpus(even can use only one Gpus but it was taking lots of time)
 python version: 3.5
 runtime version: 1.8
