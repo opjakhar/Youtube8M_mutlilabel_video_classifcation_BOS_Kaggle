@@ -3,9 +3,9 @@ We ran this code on google cloud plateform using 4Gpus(even can use only one Gpu
 python version: 3.5
 runtime version: 1.8
 below is the script and some important commmand required for run this code.for more understadning of this challege and code you can read README1.md file.
-******************************************************************************************************************************************************
--------------------***************script for training and generating pridction using  LstmModel_late******************************** -----------------
-******************************************************************************************************************************************************
+******************************************************************************************************************************
+-------------***************script for training and generating pridction *************************** -----------------
+********************************************************************************************************************************
 
 
 total number of epoch: 3 or 4
@@ -36,9 +36,9 @@ JOB_NAME=yt8m_inference_$(date +%Y%m%d_%H%M%S); gcloud --verbosity=debug ml-engi
 
 
 
-******************************************************************************************************************************************************
--------------------***************script for training and generating pridction using  simple LSTM****************** ----------------------------------
-******************************************************************************************************************************************************
+********************************************************************************************************************************
+--------***********script for training and generating pridction using  simple LSTM****************** ----------------
+********************************************************************************************************************************
 
 BUCKET_NAME=gs://jakhar95op_demo_checkk
 gsutil mb -l asia-east1 $BUCKET_NAME
@@ -94,14 +94,15 @@ submit training $JOB_NAME \
 
 
 #---other important commands---
+
 (1) transfer files from google cloud to  local machine 
-				gcloud compute scp jakhar95op@instance-1:~/youtubeMix/*  "/home/omprakashjakhar/Downloads/youtubeMix/"
+		gcloud compute scp jakhar95op@instance-1:~/youtubeMix/*  "/home/omprakashjakhar/Downloads/youtubeMix/"
 
 (2) transfer files from local machine to google cloud 
-				gcloud compute scp --recurse /home/omprakashjakhar/youtube-zhs/inference1.py jakhar95op@instance-1:~/youtubeMix/
+		gcloud compute scp --recurse /home/omprakashjakhar/youtube-zhs/inference1.py jakhar95op@instance-1:~/youtubeMix/
 
 (3) cancle running job($JOB_NBAME) on google cloud
-				gcloud ml-engine jobs cancel $JOB_NAME
+		gcloud ml-engine jobs cancel $JOB_NAME
 
 (4) view job($JOB_NBAME) info running on google cloud 
-				gcloud ml-engine jobs stream-logs $JOB_NAME
+		gcloud ml-engine jobs stream-logs $JOB_NAME
