@@ -1,4 +1,8 @@
-
+Here we have uploaded our youtube8M mutlilabel video classification challenge on Kaggle.we are using starter code provided by the team(kaggle or Google).
+We ran this code on google cloud plateform using 4Gpus(even can use only one Gpus but it was taking lots of time)
+python version: 3.5
+runtime version: 1.8
+below is the script and some important commmand required for run this code.for more understadning of this challege and code you can read README1.md file.
 ******************************************************************************************************************************************************
 -------------------***************script for training and generating pridction using  LstmModel_late******************************** -----------------
 ******************************************************************************************************************************************************
