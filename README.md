@@ -4,7 +4,7 @@ python version: 3.5
 runtime version: 1.8
 below is the script and some important commmand required for run this code.for more understadning of this challege and code you can read README1.md file.
 ******************************************************************************************************************************
--------------***************script for training and generating pridction *************************** -----------------
+-------------***************script for training and generating prediction *************************** -----------------
 ********************************************************************************************************************************
 
 
@@ -37,7 +37,7 @@ JOB_NAME=yt8m_inference_$(date +%Y%m%d_%H%M%S); gcloud --verbosity=debug ml-engi
 
 
 ********************************************************************************************************************************
---------***********script for training and generating pridction using  simple LSTM****************** ----------------
+--------***********script for training and generating prediction using  simple LSTM****************** ----------------
 ********************************************************************************************************************************
 
 BUCKET_NAME=gs://jakhar95op_demo_checkk
