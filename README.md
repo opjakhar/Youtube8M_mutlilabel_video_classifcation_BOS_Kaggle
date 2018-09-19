@@ -1,3 +1,7 @@
+This repository contains all code used by our team "BOS" in the Kaggle's competition The 2nd YouTube-8M Video Understanding Challenge.This repository is a fork of google's repository.
+
+
+
 youtube8M mutlilabel video classification challenge code.we are using starter code provided by the Organisor(kaggle or Google).
 We ran this code on google cloud plateform using 4Gpus(even can use only one Gpus but it was taking lots of time)
 python version: 3.5
